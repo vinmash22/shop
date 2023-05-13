@@ -19,7 +19,7 @@ public class Controller {
 
     @GetMapping("/add")
     public void add(@RequestParam int ... ids) {
-        cartService.add();
+        cartService.add(ids);
     }
     @GetMapping("/get")
     public Collection<Integer> get() {
